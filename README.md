@@ -1,6 +1,16 @@
 # Ticket1
 
 ```sh
-$ docker build -t node-am .
-$ docker run -d -p 7756:3067 --name node-am-app node-am
+การทำงานเริ่มจากไฟล์
+Config/Bootstrap
+->Controller/ReportPoDaysController
+->Controller/Component/MyCurlComponent
+->http://10.135.70.60:3067/apiCallStoredAm
+```
+```sh
+การทำงานด้าน Server
+Dockerfile
+->pm2
+->src/app.js
+->app.post("/apiCallStoredAm", async function (req, res, next) {....} )
 ```
