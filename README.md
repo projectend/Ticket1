@@ -1,16 +1,16 @@
 # Ticket1
 
 ```sh
-การทำงานเริ่มจากไฟล์
+Front End
 Config/Bootstrap
-->Controller/ReportPoDaysController
-->Controller/Component/MyCurlComponent
-->http://10.135.70.60:3067/apiCallStoredAm
+Controller/ReportPoDaysController
+Controller/Component/MyCurlComponent
+http://10.135.70.60:3067/apiCallStoredAm
 ```
 ```sh
-การทำงานด้าน Server
+Back End
 Dockerfile
-->pm2
-->src/app.js
-->app.post("/apiCallStoredAm", async function (req, res, next) {....} )
+pm2
+src/app.js
+app.post("/apiCallStoredAm", async function (req, res, next) {....} )
 ```
